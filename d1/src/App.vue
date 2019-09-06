@@ -4,7 +4,11 @@
     <Menu mode="horizontal" :theme="theme1" active-name="1">
       <MenuItem name="1">
         <router-link to="/">
+<<<<<<< HEAD
           <Icon type="ios-aperture" />个人中心+
+=======
+          <Icon type="ios-aperture" />个人中心-
+>>>>>>> 9e4fa7898f2fcb53ae2e164e1e1810a345e8ad89
         </router-link>
       </MenuItem>
       <MenuItem name="2">
