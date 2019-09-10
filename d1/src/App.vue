@@ -32,7 +32,7 @@
     </Menu>
     <div class="loginBox">
       <Button type="info" @click="open">登录</Button>
-      <Modal :visible.sync="modal" title="亲~  请登录" v-model="modal" :loading="loading" @on-ok="ok">
+      <Modal :visible.sync="modal" title="亲~  请登录" v-model="modal" :loading="loading" @on-ok="ok" :closable="false">
         <Tabs size="small" class="layout-assistant">
           <Tab-pane label="登录">
             <Login />
@@ -41,6 +41,7 @@
             <Register />
           </Tab-pane>
         </Tabs>
+        <div slot="footer"></div>
       </Modal>
     </div>
  </Affix>
