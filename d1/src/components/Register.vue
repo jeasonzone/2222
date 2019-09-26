@@ -53,16 +53,14 @@ export default {
   },
   methods: {
     doRegister(){
-      var _url="http://192.168.8.67:8012/register?name="+this.name+"&pwd="+this.pwd+"&sex="+this.sex+"&email="+this.email;
+      var _url="http://192.168.8.12:8012/register?name="+this.name+"&pwd="+this.pwd+"&sex="+this.sex+"&email="+this.email;
       this.axios
       .get(_url)
       .then(() => {
         alert('注册成功');
         this.$router.go(0);
       })
-      .catch(function(error) {
-        console.log(error);
-      });
+      .catch();
     }
   }
 };

@@ -45,11 +45,8 @@ export default {
         this.createTime=response.data.data.createTime;
         this.version=response.data.data.version;
         this.descriptions=response.data.data.description;
-        console.log("ok");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
+              })
+      .catch();
   },
   methods: {
     getDay: function() {

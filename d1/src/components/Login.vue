@@ -44,13 +44,11 @@ export default {
   },
   mounted: function() {
     this.axios
-      .get("http://192.168.8.67:8012/login")
+      .get("http://192.168.8.12:8012/login")
       .then(response => {
         this.users=response.data.data
       })
-      .catch(function(error) {
-        console.log(error);
-      });
+      .catch();
   },
   methods: {
     handleSubmit(name) {

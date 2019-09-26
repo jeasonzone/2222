@@ -4,12 +4,12 @@
     <Menu mode="horizontal" :theme="theme1" active-name="1">
       <MenuItem name="1">
         <router-link to="/">
-        <Icon type="ios-aperture" />个人中心
+        <Icon type="ios-aperture" />首页
         </router-link>
       </MenuItem>
       <MenuItem name="2">
         <router-link to="about">
-          <Icon type="ios-heart" />独家收藏
+          <Icon type="ios-heart" />个人中心
         </router-link>
       </MenuItem>
       <Submenu name="3">
@@ -86,7 +86,10 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style>
+template{
+  background-color: aqua;
+}
 .loginBox {
   position: absolute;
   float: right;
